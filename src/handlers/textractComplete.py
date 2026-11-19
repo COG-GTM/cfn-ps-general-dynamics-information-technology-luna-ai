@@ -2,7 +2,7 @@ import json
 import boto3
 import os
 import urllib.parse
-from datetime import datetime
+from datetime import datetime, timezone
 import time
 import botocore
 from json import JSONEncoder
@@ -182,7 +182,7 @@ def writeMessageEvent(event, objAssetDB, sComponentSource, sProcessId, sProcessT
     
     bridgeEvent = {
         'EventBusName':sEventBusName,
-        'Time': datetime.utcnow(),
+        'Time': datetime.now(timezone.utc),
         'Source':'gdit.me',
         'Resources' : [
             sS3PlainTextBucketarn

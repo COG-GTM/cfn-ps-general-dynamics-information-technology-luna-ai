@@ -2,7 +2,7 @@ import json
 import boto3
 import os
 import urllib.parse
-from datetime import datetime
+from datetime import datetime, timezone
 import time
 import botocore
 from json import JSONEncoder
@@ -129,7 +129,7 @@ def enrichmentEvent(event, enrichments, sComponentSource, sProcessId, sProcessTy
     
     bridgeEvent = {
         'EventBusName':sEventBusName,
-        'Time': datetime.utcnow(),
+        'Time': datetime.now(timezone.utc),
         'Source':'gdit.me',
         'Resources' : [],
         'DetailType':'enrichments',

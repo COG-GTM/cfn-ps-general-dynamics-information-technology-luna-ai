@@ -79,7 +79,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/ingestion.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 10240
       Timeout: 30
       Description: Enrichment Engine-Lambda function to ingest data into the enrichment engine
@@ -143,7 +143,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/textractStart.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 128
       Timeout: 120
       Description: Enrichment Engine-Starts Textract Async
@@ -205,7 +205,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/textractComplete.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 10240
       Timeout: 900
       Description: Enrichment Engine-Complete Textract Processing and Produces Plain Text Files
@@ -264,7 +264,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/rkImgDetectText.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 128
       Timeout: 120
       Description: Enrichment Engine-Image Detect Text
@@ -333,7 +333,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/rkImgDetectCelebrity.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 128
       Timeout: 120
       Description: Enrichment Engine-Image Detect Celebrity
@@ -402,7 +402,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/rkImgDetectLabels.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 1024
       Timeout: 360
       Description: Enrichment Engine-Image Detect Labels
@@ -471,7 +471,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/rkImgDetectFaces.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 1024
       Timeout: 360
       Description: Enrichment Engine-Image Detect Faces
@@ -540,7 +540,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/rkImgModeration.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 128
       Timeout: 120
       Description: Enrichment Engine-Image Moderation Detection
@@ -609,7 +609,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/video_rekognition_facedetection.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 1024
       Timeout: 360
       Description: Enrichment Engine-Video Detect Faces
@@ -667,7 +667,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/video_rekognition_facedetectioncomplete.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 10240
       Timeout: 900
       Description: Enrichment Engine-Complete Video Face Detection via rekognition
@@ -717,7 +717,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/dominantlanguageStart.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 128
       Timeout: 120
       Description: Enrichment Engine-Starts Comprehend Async Detection of Language
@@ -805,7 +805,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/dominantlanguageComplete.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 1024
       Timeout: 120
       Description: Enrichment Engine-Completes Comprehend Async Detection of Language
@@ -863,7 +863,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/comprehendStart.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 512
       Timeout: 120
       Description: Enrichment Engine-Starts Comprehend NER Async
@@ -942,7 +942,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/comprehendComplete.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 5012
       Timeout: 900
       Description: Enrichment Engine-Complete Comprehend NER
@@ -1009,7 +1009,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/translateStart.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 128
       Timeout: 120
       Description: Enrichment Engine-Starts Translate ASync
@@ -1033,7 +1033,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/translateComplete.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 10240
       Timeout: 900
       Description: Enrichment Engine-Complete the translation
@@ -1047,7 +1047,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/rekognitionStart.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 128
       Timeout: 120
       Description: Enrichment Engine-Starts Rekognition Async
@@ -1074,7 +1074,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/rekognitionComplete.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 128
       Timeout: 120
       Description: Enrichment Engine-Complete Rekognition Run.
@@ -1088,7 +1088,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/transcribeStart.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 128
       Timeout: 120
       Description: Enrichment Engine-Starts Transcription Async
@@ -1115,7 +1115,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/transcribeComplete.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 128
       Timeout: 120
       Description: Enrichment Engine-Complete Transcribe Run.
@@ -1129,7 +1129,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/elementalConvertStart.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 128
       Timeout: 120
       Description: Enrichment Engine-Starts Conversion of media formats. Async
@@ -1156,7 +1156,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/elementalConvertComplete.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 128
       Timeout: 120
       Description: Enrichment Engine-Completes the processing of media type conversions.
@@ -1170,7 +1170,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/loadAnalyticsStream.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 128
       Timeout: 120
       Description: Enrichment Engine-Loads events onto the analytics data stream for other systems to process
@@ -1184,7 +1184,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/loadKendraIndex.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 1024
       Timeout: 120
       Description: Enrichment Engine-Loads Kendra index as records are received.
@@ -1235,7 +1235,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/loadKendraMetadata.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 5012
       Timeout: 360
       Description: Enrichment Engine-Loads Kendra index's metadata as records are received.
@@ -1275,7 +1275,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/loadElasticSearch.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 128
       Timeout: 120
       Description: Enrichment Engine-Loads ElasticSearch as records are received.
@@ -1290,7 +1290,7 @@ Resources:
 #      Handler: src/handlers/img2pdfConvert.lambda_handler
 #      Layers:
 #        - !Ref pillowlayer
-#      Runtime: python3.8
+#      Runtime: python3.12
 #      MemorySize: 1024
 #      Timeout: 360
 #      Description: Enrichment Engine-Converts images to pdf
@@ -1350,7 +1350,7 @@ Resources:
     Properties:
       CodeUri: ./
       Handler: src/handlers/dynamodbEnrichments.LambdaHandler
-      Runtime: python3.8
+      Runtime: python3.12
       MemorySize: 128
       Timeout: 120
       Description: Enrichment Engine-Near Real Time Enrichment Storage 
