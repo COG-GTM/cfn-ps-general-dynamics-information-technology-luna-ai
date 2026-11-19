@@ -1,0 +1,7 @@
+# Test-only dependencies. The Lambda handlers themselves use only the standard
+# library and the boto3/botocore that the Lambda runtime provides.
+boto3>=1.26,<2
+moto[s3,dynamodb,events]>=5.0,<6
+pytest>=8.0,<9
+pytest-cov>=5.0,<6
+pytest-socket>=0.7,<1
