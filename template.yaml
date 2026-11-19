@@ -1391,6 +1391,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1409,6 +1411,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1427,6 +1431,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1445,6 +1451,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1467,6 +1475,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1485,6 +1495,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1503,6 +1515,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1521,6 +1535,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1539,6 +1555,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1558,6 +1576,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1577,6 +1597,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1596,6 +1618,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1615,6 +1639,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1634,6 +1660,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1653,6 +1681,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1672,6 +1702,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1691,6 +1723,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1710,6 +1744,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::S3::Bucket
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -1729,6 +1765,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::DynamoDB::Table
     Properties: 
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
       BillingMode: PAY_PER_REQUEST
       AttributeDefinitions: 
         - AttributeName: AssetId
@@ -1743,6 +1781,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::DynamoDB::Table
     Properties:
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
       BillingMode: PAY_PER_REQUEST
       TimeToLiveSpecification:
         AttributeName: TTL
@@ -1764,6 +1804,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::DynamoDB::Table
     Properties:
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
       BillingMode: PAY_PER_REQUEST
       AttributeDefinitions: 
         - AttributeName: AssetId
@@ -1782,6 +1824,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::DynamoDB::Table
     Properties:
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
       BillingMode: PAY_PER_REQUEST
       AttributeDefinitions: 
         - AttributeName: AssetId
@@ -1800,6 +1844,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::DynamoDB::Table
     Properties: 
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
       BillingMode: PAY_PER_REQUEST
       AttributeDefinitions: 
         - AttributeName: AssetId
@@ -1814,6 +1860,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::DynamoDB::Table
     Properties: 
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
       BillingMode: PAY_PER_REQUEST
       AttributeDefinitions: 
         - AttributeName: AssetId
@@ -1832,6 +1880,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::DynamoDB::Table
     Properties: 
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
       BillingMode: PAY_PER_REQUEST
       AttributeDefinitions: 
         - AttributeName: AssetId
@@ -1850,6 +1900,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::DynamoDB::Table
     Properties: 
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
       BillingMode: PAY_PER_REQUEST
       AttributeDefinitions: 
         - AttributeName: CollectionId
@@ -1864,6 +1916,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::DynamoDB::Table
     Properties: 
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
       BillingMode: PAY_PER_REQUEST
       AttributeDefinitions: 
         - AttributeName: SubscriberId
@@ -1882,6 +1936,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::DynamoDB::Table
     Properties: 
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
       BillingMode: PAY_PER_REQUEST
       AttributeDefinitions: 
         - AttributeName: Term
@@ -1921,6 +1977,8 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::DynamoDB::Table
     Properties: 
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
       BillingMode: PAY_PER_REQUEST
       AttributeDefinitions: 
         - AttributeName: AssetId
@@ -1950,6 +2008,8 @@ Resources:
   ingestQueue:
     DeletionPolicy: Delete
     Type: AWS::SQS::Queue
+    Properties:
+      SqsManagedSseEnabled: true
       
   ingestQueuePolicy:
     Type: AWS::SQS::QueuePolicy
@@ -1968,8 +2028,12 @@ Resources:
         Statement:
           - Sid: "ingestSID"
             Effect: Allow
-            Principal: "*"
-            Action: "sqs:*"
+            Principal:
+              Service: s3.amazonaws.com
+            Action: sqs:SendMessage
+            Condition:
+              StringEquals:
+                aws:SourceAccount: !Ref AWS::AccountId
             Resource: !GetAtt ingestQueue.Arn
                 
   S3ingest:
@@ -1977,6 +2041,8 @@ Resources:
     Type: AWS::S3::Bucket
     DependsOn: ingestQueuePolicy
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       AccessControl: LogDeliveryWrite
       BucketEncryption:
         ServerSideEncryptionConfiguration:
@@ -1996,6 +2062,7 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::SQS::Queue
     Properties:
+       SqsManagedSseEnabled: true
        VisibilityTimeout: 120
       
   comprehendlangQueuePolicy:
@@ -2015,8 +2082,12 @@ Resources:
         Statement:
         - Sid: LangSID
           Effect: Allow
-          Principal: '*'
-          Action: "sqs:*"
+          Principal:
+            Service: s3.amazonaws.com
+          Action: sqs:SendMessage
+          Condition:
+            StringEquals:
+              aws:SourceAccount: !Ref AWS::AccountId
           Resource: !GetAtt comprehendlangQueue.Arn
 
   S3NlpLang:
@@ -2024,6 +2095,8 @@ Resources:
     Type: AWS::S3::Bucket
     DependsOn: comprehendlangQueuePolicy
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       AccessControl: LogDeliveryWrite
       BucketEncryption:
         ServerSideEncryptionConfiguration:
@@ -2048,6 +2121,7 @@ Resources:
     DeletionPolicy: Delete
     Type: AWS::SQS::Queue
     Properties:
+       SqsManagedSseEnabled: true
        VisibilityTimeout: 900
     
   comprehendnlpQueuePolicy:
@@ -2067,8 +2141,12 @@ Resources:
         Statement: 
           - Sid: "nlpSID"
             Effect: Allow
-            Principal: "*"
-            Action: "sqs:*"
+            Principal:
+              Service: s3.amazonaws.com
+            Action: sqs:SendMessage
+            Condition:
+              StringEquals:
+                aws:SourceAccount: !Ref AWS::AccountId
             Resource: !GetAtt comprehendnlpQueue.Arn
 
   S3NlpNer:
@@ -2076,6 +2154,8 @@ Resources:
     Type: AWS::S3::Bucket
     DependsOn: comprehendnlpQueuePolicy
     Properties:
+      VersioningConfiguration:
+        Status: Enabled
       AccessControl: LogDeliveryWrite
       BucketEncryption:
         ServerSideEncryptionConfiguration:
@@ -2099,13 +2179,19 @@ Resources:
 #AWS Resources SNS Topics            
   AmazonTextractSNS:
     Type: AWS::SNS::Topic
+    Properties:
+      KmsMasterKeyId: alias/aws/sns
     
   AmazonTextractASNS:
     Type: AWS::SNS::Topic
+    Properties:
+      KmsMasterKeyId: alias/aws/sns
 
   #Rekognition Face Detection SNS topic.
   AmazonRkFaceDetSNS:
     Type: AWS::SNS::Topic
+    Properties:
+      KmsMasterKeyId: alias/aws/sns
 
 #SAM appears to have not implemented custom eventbuses yet. 
 #    EventBus:
